@@ -10,6 +10,17 @@ module.exports = {
         filename: 'main.js',
         path: outputPath
     },
+    module:{
+        rules: [
+            {
+                test: /\.css$/,
+                use: [ //A chain is executed in reverse order
+                    'style-loader',
+                    'css-loader'
+                ]
+            }
+        ]
+    },
     // webpack-dev-server --open で開くDocument Rootを指定してる
     devServer: { 
         contentBase: outputPath
