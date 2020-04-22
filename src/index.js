@@ -1,11 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './style.css'
-import './style.scss'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './style.css';
+import './style.scss';
 
-alert('Hi, source-map!!')
 
 ReactDOM.render(
-    <div>Hello, React!</div>,
-    document.getElementById('root')
-)
+  <div>Hello, React!</div>,
+  document.getElementById('root'),
+);
